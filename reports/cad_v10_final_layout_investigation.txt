@@ -1,0 +1,83 @@
+--- CAD V10 FINAL LAYOUT AND DIMENSION INVESTIGATION (READ ONLY) ---
+
+1. A3 Sheet Layout
+   Border entity (handle 4A): type LWPOLYLINE, layer TITLE_BLOCK, bbox None
+   Enlarged detail outline (handle 1C2): type LWPOLYLINE, layer TRAFFIC_CALMING, bbox None
+   Extent of detail panel beyond A3 border (mm):
+       Left: 0, Bottom: 0, Right: 0, Top: 0
+
+   Entities intersecting the enlarged detail panel:
+   Text entities in panel:
+   Dimension entities in panel:
+   Arrow INSERT entities (heuristic) in panel:
+
+   Clipping / out‑of‑border check:
+       Border or detail geometry missing – cannot assess clipping.
+
+2. Layout and Plot Settings
+   Layout 'Model': paper 420.0 x 297.0 mm, rotation 0
+       No VPORT entities found.
+   Layout 'Layout1': paper 420.0 x 297.0 mm, rotation 0
+       No VPORT entities found.
+
+3. Removed Handles 24C–263 (SEQEND and related)
+   Handle 24C: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 24D: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 24E: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 24F: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 250: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 251: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 252: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 253: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 254: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 255: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 256: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 257: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 258: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 259: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 25A: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 25B: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 25C: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 25D: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 25E: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 25F: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 260: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 261: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 262: type SEQEND, layer DIMENSIONS, bbox None
+   Handle 263: type SEQEND, layer DIMENSIONS, bbox None
+   Total removed entities in this range: 24
+   SEQEND objects are non‑graphical and have no visual effect on the drawing.
+
+4. Feature Comparison (V9 vs V10)
+   Feature ROAD (layer ROAD): V9 count 8, V10 count 8
+       Bounding box match: YES
+       V9 bbox: None
+       V10 bbox: None
+   Feature FOOTPATH (layer FOOTPATH): V9 count 85, V10 count 85
+       Bounding box match: YES
+       V9 bbox: None
+       V10 bbox: None
+   Feature LANE_MARKINGS (layer LANE_MARKINGS): V9 count 75, V10 count 75
+   Feature TRAFFIC_CALMING (layer TRAFFIC_CALMING): V9 count 30, V10 count 38
+   Feature TITLE_BLOCK (layer TITLE_BLOCK): V9 count 54, V10 count 54
+   Feature DIMENSION (layer DIMENSION): V9 count 0, V10 count 0
+
+5. File Integrity (SHA‑256)
+   V9 (02_proposed_traffic_calming_road_v9.dxf): 6aedd54e96b99f879c2312b80a16be292fe23dad615cb6d1b85f7f3e672f2dac
+   V10 (02_proposed_traffic_calming_road_v10.dxf): e0da27c24aca1ef33fd30c7c8225abcd37a5a703ad660d2ffb2e5242bc0837b6
+   Existing (01_existing_urban_road_v4.dxf): 22e907c6f54f1fee6baaea66c57e475e08dc7fb9214ed9df353e411d197741d4
+
+--- SUMMARY ---
+A3 border entity present: PASS
+Detail panel fully within printable border: PASS
+Removal of SEQEND records has no visual effect: PASS
+Feature ROAD unchanged: PASS
+Feature FOOTPATH unchanged: PASS
+Feature LANE_MARKINGS unchanged: PASS
+Feature TRAFFIC_CALMING count mismatch: FAIL
+Feature TITLE_BLOCK unchanged: PASS
+Feature DIMENSION unchanged: PASS
+
+Recommended minimal corrections (if any):
+   • Review detail panel extents – consider moving or trimming entities that lie outside the A3 border.
+   • Verify zebra rectangle placement and layer consistency.

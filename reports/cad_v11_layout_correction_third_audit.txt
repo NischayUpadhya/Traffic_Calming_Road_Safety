@@ -1,0 +1,74 @@
+--- CAD V11 Layout Correction Third Audit (READ ONLY) ---
+
+1. Verified handles (type, layer, bbox)
+   Handle 1BB: type LWPOLYLINE, layer TEXT, bbox (np.float64(200000.0), np.float64(250000.0), np.float64(420000.0), np.float64(380000.0))
+   Handle 1BE: type LWPOLYLINE, layer FOOTPATH, bbox (np.float64(205000.0), np.float64(255000.0), np.float64(405000.0), np.float64(275000.0))
+   Handle 1BF: type LWPOLYLINE, layer FOOTPATH, bbox (np.float64(205000.0), np.float64(345000.0), np.float64(405000.0), np.float64(365000.0))
+   Handle 1C0: type LWPOLYLINE, layer ROAD, bbox (np.float64(205000.0), np.float64(275000.0), np.float64(405000.0), np.float64(345000.0))
+   Handle 1C2: type LWPOLYLINE, layer TRAFFIC_CALMING, bbox (np.float64(275000.0), np.float64(275000.0), np.float64(335000.0), np.float64(345000.0))
+   Handle 243: type LINE, layer TEXT, bbox (305000.0, 343000.0, 417000.0, 357000.0)
+   Handle 245: type LINE, layer TEXT, bbox (335000.0, 267000.0, 417000.0, 308000.0)
+
+2. Comparison with earlier audit reports
+   Handle 1BB: no previous data to compare
+   Handle 1BE: no previous data to compare
+   Handle 1BF: no previous data to compare
+   Handle 1C0: no previous data to compare
+   Handle 1C2: no previous data to compare
+   Handle 243: no previous data to compare
+   Handle 245: no previous data to compare
+
+3. Complete enlarged-detail group entities
+   Handle | Type | Layer | BBox (xmin, ymin, xmax, ymax)
+      1BC | TEXT         | TEXT         | (310000, 280000, 310000, 280000)
+      1BD | TEXT         | TEXT         | (310000, 295000, 310000, 295000)
+      1C1 | LINE         | LANE_MARKINGS | (305000, 275000, 305000, 345000)
+      1C2 | LWPOLYLINE   | TRAFFIC_CALMING | (275000, 275000, 335000, 345000)
+      1C3 | LINE         | TRAFFIC_CALMING | (275000, 285000, 335000, 285000)
+      1C4 | LINE         | TRAFFIC_CALMING | (275000, 295000, 335000, 295000)
+      1C5 | LINE         | TRAFFIC_CALMING | (275000, 305000, 335000, 305000)
+      1C6 | LINE         | TRAFFIC_CALMING | (275000, 315000, 335000, 315000)
+      1C7 | LINE         | TRAFFIC_CALMING | (275000, 325000, 335000, 325000)
+      1C8 | LINE         | TRAFFIC_CALMING | (275000, 335000, 335000, 335000)
+      1C9 | LINE         | TRAFFIC_CALMING | (255000, 275000, 275000, 275000)
+      1CA | LINE         | TRAFFIC_CALMING | (335000, 275000, 355000, 275000)
+      1D1 | LINE         | LANE_MARKINGS | (257500, 292500, 272500, 292500)
+      1D2 | LINE         | LANE_MARKINGS | (257500, 292500, 262500, 295500)
+      1D3 | LINE         | LANE_MARKINGS | (257500, 289500, 262500, 292500)
+      1D4 | LINE         | LANE_MARKINGS | (257500, 327500, 272500, 327500)
+      1D5 | LINE         | LANE_MARKINGS | (267500, 327500, 272500, 330500)
+      1D6 | LINE         | LANE_MARKINGS | (267500, 324500, 272500, 327500)
+      1D7 | LINE         | LANE_MARKINGS | (297500, 292500, 312500, 292500)
+      1D8 | LINE         | LANE_MARKINGS | (297500, 292500, 302500, 295500)
+      1D9 | LINE         | LANE_MARKINGS | (297500, 289500, 302500, 292500)
+      1DA | LINE         | LANE_MARKINGS | (297500, 327500, 312500, 327500)
+      1DB | LINE         | LANE_MARKINGS | (307500, 327500, 312500, 330500)
+      1DC | LINE         | LANE_MARKINGS | (307500, 324500, 312500, 327500)
+      1DD | LINE         | LANE_MARKINGS | (337500, 292500, 352500, 292500)
+      1DE | LINE         | LANE_MARKINGS | (337500, 292500, 342500, 295500)
+      1DF | LINE         | LANE_MARKINGS | (337500, 289500, 342500, 292500)
+      1E0 | LINE         | LANE_MARKINGS | (337500, 327500, 352500, 327500)
+      1E1 | LINE         | LANE_MARKINGS | (347500, 327500, 352500, 330500)
+      1E2 | LINE         | LANE_MARKINGS | (347500, 324500, 352500, 327500)
+      243 | LINE         | TEXT         | (305000, 343000, 417000, 357000)
+      245 | LINE         | TEXT         | (335000, 267000, 417000, 308000)
+
+4. Overall group extents
+   Min X: 255000 mm
+   Min Y: 267000 mm
+   Max X: 417000 mm
+   Max Y: 357000 mm
+
+5. Translation required to fit within A3 border with 10,000 mm margin
+   Target interior X: [10000 - 410000]
+   Target interior Y: [10000 - 287000]
+   Required shift: ΔX = -7000 mm, ΔY = -70000 mm
+
+6. Unrelated layers present in group
+   None – group contains only detail‑specific layers
+
+7. Validation of translation
+   After translation: X [248000, 410000], Y [197000, 287000]
+   Fits within required area: PASS
+
+--- END OF THIRD AUDIT ---

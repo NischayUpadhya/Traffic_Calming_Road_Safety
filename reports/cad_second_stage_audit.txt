@@ -1,0 +1,94 @@
+=== Drawing 01 (existing) ===
+Layers and entity counts:
+  DIMENSIONS: 7
+  FOOTPATH: 83
+  LANE_MARKINGS: 50
+  LEGEND: 18
+  ROAD: 7
+  TEXT: 22
+  TITLE_BLOCK: 53
+Entity type totals:
+  CIRCLE: 1
+  DIMENSION: 6
+  LINE: 159
+  LWPOLYLINE: 4
+  TEXT: 70
+No INSERTs found (no block references).
+
+=== Drawing 02 v8 (proposed) ===
+Layers and entity counts:
+  DIMENSIONS: 13
+  FOOTPATH: 85
+  LANE_MARKINGS: 75
+  LEGEND: 22
+  ROAD: 8
+  SIGNS: 9
+  TEXT: 32
+  TITLE_BLOCK: 54
+  TRAFFIC_CALMING: 30
+Entity type totals:
+  CIRCLE: 5
+  DIMENSION: 12
+  LINE: 210
+  LWPOLYLINE: 15
+  TEXT: 86
+No INSERTs found (no block references).
+
+=== Drawing 02 v9 (proposed) ===
+Layers and entity counts:
+  DIMENSIONS: 13
+  FOOTPATH: 85
+  LANE_MARKINGS: 75
+  LEGEND: 22
+  ROAD: 8
+  SIGNS: 9
+  TEXT: 32
+  TITLE_BLOCK: 54
+  TRAFFIC_CALMING: 30
+Entity type totals:
+  CIRCLE: 5
+  DIMENSION: 12
+  LINE: 210
+  LWPOLYLINE: 15
+  TEXT: 86
+No INSERTs found (no block references).
+
+=== Road geometry (Drawing 02 v9) ===
+Unable to determine road extents – no ROAD entities found.
+Length check: FAIL
+Width check: FAIL
+
+Footpath rectangles found: 0
+Footpath width check: FAIL
+
+Carriageway width (derived from total width) check: FAIL (road width could not be determined)
+
+=== Raised crossings (Drawing 02 v9) ===
+Found 0 potential crossing tables on TRAFFIC_CALMING layer.
+Crossing at chainage 60000 mm (X≈130000) – FAIL (no table intersecting)
+Crossing at chainage 140000 mm (X≈210000) – FAIL (no table intersecting)
+
+Approach ramp lines (TRAFFIC_CALMING): 23
+Zebra stripe lines (DASHED, TRAFFIC_CALMING): 20
+Sign squares (SIGNS): 4
+Reflective studs (CIRCLE, TRAFFIC_CALMING): 4
+Direction arrows (LINE, LANE_MARKINGS): 75
+
+=== Investigation of earlier false‑positives ===
+Raw ROAD extents used by previous script: length N/A, width N/A
+If previous script reported 258 000 mm length, it likely included the enlarged detail panel which lies far to the right (X≈200 000).
+Available layers in v9: ['DIMENSIONS', 'FOOTPATH', 'LANE_MARKINGS', 'LEGEND', 'ROAD', 'SIGNS', 'TEXT', 'TITLE_BLOCK', 'TRAFFIC_CALMING']
+If the FOOTPATH layer name differed in case, the earlier case‑sensitive filter returned zero.
+Entities outside sheet boundary: 4
+  1. Handle 1BC type TEXT layer TEXT bbox (308250.0, 383250.0, 311750.0, 386750.0)
+  2. Handle 1BD type TEXT layer TEXT bbox (309000.0, 399000.0, 311000.0, 401000.0)
+  3. Handle 240 type TEXT layer TEXT bbox (191250.0, 355250.0, 194750.0, 358750.0)
+  4. Handle 242 type TEXT layer TEXT bbox (415250.0, 355250.0, 418750.0, 358750.0)
+Standard layer '0' and block layer 'Defpoints' are default and are not treated as errors in this audit.
+
+=== v8 vs v9 main‑plan differences ===
+Entities only in v8 (outside detail): 1
+  v8‑only: TEXT on TEXT bbox (191250.0, 351250.0, 194750.0, 354750.0)
+Entities only in v9 (outside detail): 1
+  v9‑only: TEXT on TEXT bbox (191250.0, 355250.0, 194750.0, 358750.0)
+These differences are limited to annotation/leader lines in the detail panel; no main‑plan geometry changes detected.

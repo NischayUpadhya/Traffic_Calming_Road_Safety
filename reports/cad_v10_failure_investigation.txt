@@ -1,0 +1,366 @@
+--- CAD V10 FAILURE INVESTIGATION REPORT ---
+
+1. Zebra marking candidates in V10 (any LINE/LWPOLYLINE/POLYLINE/SOLID):
+   Handle 4A: type LWPOLYLINE, layer TITLE_BLOCK
+   Handle 4B: type LWPOLYLINE, layer TITLE_BLOCK
+   Handle 4C: type LINE, layer ROAD
+   Handle 4D: type LINE, layer ROAD
+   Handle 4E: type LINE, layer ROAD
+   Handle 4F: type LINE, layer ROAD
+   Handle 50: type LINE, layer ROAD
+   Handle 51: type LINE, layer ROAD
+   Handle 52: type LINE, layer FOOTPATH
+   Handle 53: type LINE, layer FOOTPATH
+   Handle 54: type LINE, layer FOOTPATH
+   Handle 55: type LINE, layer FOOTPATH
+   Handle 56: type LINE, layer FOOTPATH
+   Handle 57: type LINE, layer FOOTPATH
+   Handle 58: type LINE, layer FOOTPATH
+   Handle 59: type LINE, layer FOOTPATH
+   Handle 5A: type LINE, layer FOOTPATH
+   Handle 5B: type LINE, layer FOOTPATH
+   Handle 5C: type LINE, layer FOOTPATH
+   Handle 5D: type LINE, layer FOOTPATH
+   Handle 5E: type LINE, layer FOOTPATH
+   Handle 5F: type LINE, layer FOOTPATH
+   Handle 60: type LINE, layer FOOTPATH
+   Handle 61: type LINE, layer FOOTPATH
+   Handle 62: type LINE, layer FOOTPATH
+   Handle 63: type LINE, layer FOOTPATH
+   Handle 64: type LINE, layer FOOTPATH
+   Handle 65: type LINE, layer FOOTPATH
+   Handle 66: type LINE, layer FOOTPATH
+   Handle 67: type LINE, layer FOOTPATH
+   Handle 68: type LINE, layer FOOTPATH
+   Handle 69: type LINE, layer FOOTPATH
+   Handle 6A: type LINE, layer FOOTPATH
+   Handle 6B: type LINE, layer FOOTPATH
+   Handle 6C: type LINE, layer FOOTPATH
+   Handle 6D: type LINE, layer FOOTPATH
+   Handle 6E: type LINE, layer FOOTPATH
+   Handle 6F: type LINE, layer FOOTPATH
+   Handle 70: type LINE, layer FOOTPATH
+   Handle 71: type LINE, layer FOOTPATH
+   Handle 72: type LINE, layer FOOTPATH
+   Handle 73: type LINE, layer FOOTPATH
+   Handle 74: type LINE, layer FOOTPATH
+   Handle 75: type LINE, layer FOOTPATH
+   Handle 76: type LINE, layer FOOTPATH
+   Handle 77: type LINE, layer FOOTPATH
+   Handle 78: type LINE, layer FOOTPATH
+   Handle 79: type LINE, layer FOOTPATH
+   Handle 7A: type LINE, layer FOOTPATH
+   Handle 7B: type LINE, layer FOOTPATH
+   Handle 7C: type LINE, layer FOOTPATH
+   Handle 7D: type LINE, layer FOOTPATH
+   Handle 7E: type LINE, layer FOOTPATH
+   Handle 7F: type LINE, layer FOOTPATH
+   Handle 80: type LINE, layer FOOTPATH
+   Handle 81: type LINE, layer FOOTPATH
+   Handle 82: type LINE, layer FOOTPATH
+   Handle 83: type LINE, layer FOOTPATH
+   Handle 84: type LINE, layer FOOTPATH
+   Handle 85: type LINE, layer FOOTPATH
+   Handle 86: type LINE, layer FOOTPATH
+   Handle 87: type LINE, layer FOOTPATH
+   Handle 88: type LINE, layer FOOTPATH
+   Handle 89: type LINE, layer FOOTPATH
+   Handle 8A: type LINE, layer FOOTPATH
+   Handle 8B: type LINE, layer FOOTPATH
+   Handle 8C: type LINE, layer FOOTPATH
+   Handle 8D: type LINE, layer FOOTPATH
+   Handle 8E: type LINE, layer FOOTPATH
+   Handle 8F: type LINE, layer FOOTPATH
+   Handle 90: type LINE, layer FOOTPATH
+   Handle 91: type LINE, layer FOOTPATH
+   Handle 92: type LINE, layer FOOTPATH
+   Handle 93: type LINE, layer FOOTPATH
+   Handle 94: type LINE, layer FOOTPATH
+   Handle 95: type LINE, layer FOOTPATH
+   Handle 96: type LINE, layer FOOTPATH
+   Handle 97: type LINE, layer FOOTPATH
+   Handle 98: type LINE, layer FOOTPATH
+   Handle 99: type LINE, layer FOOTPATH
+   Handle 9A: type LINE, layer FOOTPATH
+   Handle 9B: type LINE, layer FOOTPATH
+   Handle 9C: type LINE, layer FOOTPATH
+   Handle 9D: type LINE, layer FOOTPATH
+   Handle 9E: type LINE, layer FOOTPATH
+   Handle 9F: type LINE, layer FOOTPATH
+   Handle A0: type LINE, layer FOOTPATH
+   Handle A1: type LINE, layer FOOTPATH
+   Handle A2: type LINE, layer FOOTPATH
+   Handle A3: type LINE, layer FOOTPATH
+   Handle A4: type LINE, layer LANE_MARKINGS
+   Handle A5: type LINE, layer LANE_MARKINGS
+   Handle A6: type LINE, layer LANE_MARKINGS
+   Handle A7: type LINE, layer LANE_MARKINGS
+   Handle A8: type LINE, layer LANE_MARKINGS
+   Handle A9: type LINE, layer LANE_MARKINGS
+   Handle AA: type LINE, layer LANE_MARKINGS
+   Handle AB: type LINE, layer LANE_MARKINGS
+   Handle AC: type LINE, layer LANE_MARKINGS
+   Handle AD: type LINE, layer LANE_MARKINGS
+   Handle AE: type LINE, layer LANE_MARKINGS
+   Handle AF: type LINE, layer LANE_MARKINGS
+   Handle B0: type LINE, layer LANE_MARKINGS
+   Handle B1: type LINE, layer LANE_MARKINGS
+   Handle B2: type LINE, layer LANE_MARKINGS
+   Handle B3: type LINE, layer LANE_MARKINGS
+   Handle B4: type LINE, layer LANE_MARKINGS
+   Handle B5: type LINE, layer LANE_MARKINGS
+   Handle B6: type LINE, layer LANE_MARKINGS
+   Handle B7: type LINE, layer LANE_MARKINGS
+   Handle B8: type LINE, layer LANE_MARKINGS
+   Handle B9: type LINE, layer LANE_MARKINGS
+   Handle BA: type LINE, layer LANE_MARKINGS
+   Handle BB: type LINE, layer LANE_MARKINGS
+   Handle BC: type LINE, layer LANE_MARKINGS
+   Handle BD: type LINE, layer LANE_MARKINGS
+   Handle BE: type LINE, layer LANE_MARKINGS
+   Handle BF: type LINE, layer LANE_MARKINGS
+   Handle C0: type LINE, layer LANE_MARKINGS
+   Handle C1: type LINE, layer LANE_MARKINGS
+   Handle C2: type LINE, layer LANE_MARKINGS
+   Handle C3: type LINE, layer LANE_MARKINGS
+   Handle C4: type LINE, layer LANE_MARKINGS
+   Handle C5: type LINE, layer LANE_MARKINGS
+   Handle C6: type LINE, layer LANE_MARKINGS
+   Handle C7: type LINE, layer LANE_MARKINGS
+   Handle C8: type LINE, layer LANE_MARKINGS
+   Handle C9: type LINE, layer LANE_MARKINGS
+   Handle CA: type LINE, layer LANE_MARKINGS
+   Handle CB: type LINE, layer LANE_MARKINGS
+   Handle CC: type LINE, layer LANE_MARKINGS
+   Handle CD: type LINE, layer LANE_MARKINGS
+   Handle CE: type LINE, layer LANE_MARKINGS
+   Handle CF: type LINE, layer LANE_MARKINGS
+   Handle D0: type LINE, layer LANE_MARKINGS
+   Handle D1: type LINE, layer LANE_MARKINGS
+   Handle D2: type LINE, layer LANE_MARKINGS
+   Handle D3: type LINE, layer LANE_MARKINGS
+   Handle D4: type LINE, layer LANE_MARKINGS
+   Handle 13F: type LINE, layer TEXT
+   Handle 141: type LINE, layer TEXT
+   Handle 143: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 14B: type LWPOLYLINE, layer SIGNS
+   Handle 14D: type LWPOLYLINE, layer SIGNS
+   Handle 152: type LINE, layer TEXT
+   Handle 153: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 15B: type LWPOLYLINE, layer SIGNS
+   Handle 15D: type LWPOLYLINE, layer SIGNS
+   Handle 162: type LINE, layer TEXT
+   Handle 163: type LINE, layer TEXT
+   Handle 164: type LINE, layer TEXT
+   Handle 165: type LINE, layer TEXT
+   Handle 166: type LINE, layer TEXT
+   Handle 16A: type LWPOLYLINE, layer LEGEND
+   Handle 16C: type LINE, layer LEGEND
+   Handle 16D: type LINE, layer ROAD
+   Handle 170: type LINE, layer LANE_MARKINGS
+   Handle 173: type LINE, layer FOOTPATH
+   Handle 176: type LINE, layer TRAFFIC_CALMING
+   Handle 179: type LINE, layer SIGNS
+   Handle 17C: type LINE, layer DIMENSIONS
+   Handle 17F: type LINE, layer TEXT
+   Handle 182: type LINE, layer TITLE_BLOCK
+   Handle 185: type LINE, layer LEGEND
+   Handle 188: type LWPOLYLINE, layer TITLE_BLOCK
+   Handle 189: type LINE, layer TITLE_BLOCK
+   Handle 18A: type LINE, layer TITLE_BLOCK
+   Handle 18B: type LINE, layer TITLE_BLOCK
+   Handle 18C: type LINE, layer TITLE_BLOCK
+   Handle 1BB: type LWPOLYLINE, layer TEXT
+   Handle 1BE: type LWPOLYLINE, layer FOOTPATH
+   Handle 1BF: type LWPOLYLINE, layer FOOTPATH
+   Handle 1C0: type LWPOLYLINE, layer ROAD
+   Handle 1C1: type LINE, layer LANE_MARKINGS
+   Handle 1C2: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 1C3: type LINE, layer TRAFFIC_CALMING
+   Handle 1C4: type LINE, layer TRAFFIC_CALMING
+   Handle 1C5: type LINE, layer TRAFFIC_CALMING
+   Handle 1C6: type LINE, layer TRAFFIC_CALMING
+   Handle 1C7: type LINE, layer TRAFFIC_CALMING
+   Handle 1C8: type LINE, layer TRAFFIC_CALMING
+   Handle 1C9: type LINE, layer TRAFFIC_CALMING
+   Handle 1CA: type LINE, layer TRAFFIC_CALMING
+   Handle 1CB: type LINE, layer LANE_MARKINGS
+   Handle 1CC: type LINE, layer LANE_MARKINGS
+   Handle 1CD: type LINE, layer LANE_MARKINGS
+   Handle 1CE: type LINE, layer LANE_MARKINGS
+   Handle 1CF: type LINE, layer LANE_MARKINGS
+   Handle 1D0: type LINE, layer LANE_MARKINGS
+   Handle 1D1: type LINE, layer LANE_MARKINGS
+   Handle 1D2: type LINE, layer LANE_MARKINGS
+   Handle 1D3: type LINE, layer LANE_MARKINGS
+   Handle 1D4: type LINE, layer LANE_MARKINGS
+   Handle 1D5: type LINE, layer LANE_MARKINGS
+   Handle 1D6: type LINE, layer LANE_MARKINGS
+   Handle 1D7: type LINE, layer LANE_MARKINGS
+   Handle 1D8: type LINE, layer LANE_MARKINGS
+   Handle 1D9: type LINE, layer LANE_MARKINGS
+   Handle 1DA: type LINE, layer LANE_MARKINGS
+   Handle 1DB: type LINE, layer LANE_MARKINGS
+   Handle 1DC: type LINE, layer LANE_MARKINGS
+   Handle 1DD: type LINE, layer LANE_MARKINGS
+   Handle 1DE: type LINE, layer LANE_MARKINGS
+   Handle 1DF: type LINE, layer LANE_MARKINGS
+   Handle 1E0: type LINE, layer LANE_MARKINGS
+   Handle 1E1: type LINE, layer LANE_MARKINGS
+   Handle 1E2: type LINE, layer LANE_MARKINGS
+   Handle 241: type LINE, layer TEXT
+   Handle 243: type LINE, layer TEXT
+   Handle 245: type LINE, layer TEXT
+   Handle 247: type LINE, layer TEXT
+   Handle 264: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 265: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 266: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 267: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 268: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 269: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 26A: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 26B: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 26C: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 26D: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 26E: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 26F: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 270: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 271: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 272: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 273: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 274: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 275: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 276: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 277: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 278: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Handle 279: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Total candidates found: 233
+
+2. Handles 264–291 details:
+   Handle 264: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[127200.0, 182000.0], [127400.0, 182000.0], [127400.0, 189000.0], [127200.0, 189000.0]]}
+   Handle 265: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[127700.0, 182000.0], [127900.0, 182000.0], [127900.0, 189000.0], [127700.0, 189000.0]]}
+   Handle 266: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[128200.0, 182000.0], [128400.0, 182000.0], [128400.0, 189000.0], [128200.0, 189000.0]]}
+   Handle 267: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[128700.0, 182000.0], [128900.0, 182000.0], [128900.0, 189000.0], [128700.0, 189000.0]]}
+   Handle 268: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[129200.0, 182000.0], [129400.0, 182000.0], [129400.0, 189000.0], [129200.0, 189000.0]]}
+   Handle 269: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[129700.0, 182000.0], [129900.0, 182000.0], [129900.0, 189000.0], [129700.0, 189000.0]]}
+   Handle 26A: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[130200.0, 182000.0], [130400.0, 182000.0], [130400.0, 189000.0], [130200.0, 189000.0]]}
+   Handle 26B: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[130700.0, 182000.0], [130900.0, 182000.0], [130900.0, 189000.0], [130700.0, 189000.0]]}
+   Handle 26C: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[131200.0, 182000.0], [131400.0, 182000.0], [131400.0, 189000.0], [131200.0, 189000.0]]}
+   Handle 26D: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[131700.0, 182000.0], [131900.0, 182000.0], [131900.0, 189000.0], [131700.0, 189000.0]]}
+   Handle 26E: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[132200.0, 182000.0], [132400.0, 182000.0], [132400.0, 189000.0], [132200.0, 189000.0]]}
+   Handle 26F: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[207200.0, 182000.0], [207400.0, 182000.0], [207400.0, 189000.0], [207200.0, 189000.0]]}
+   Handle 270: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[207700.0, 182000.0], [207900.0, 182000.0], [207900.0, 189000.0], [207700.0, 189000.0]]}
+   Handle 271: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[208200.0, 182000.0], [208400.0, 182000.0], [208400.0, 189000.0], [208200.0, 189000.0]]}
+   Handle 272: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[208700.0, 182000.0], [208900.0, 182000.0], [208900.0, 189000.0], [208700.0, 189000.0]]}
+   Handle 273: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[209200.0, 182000.0], [209400.0, 182000.0], [209400.0, 189000.0], [209200.0, 189000.0]]}
+   Handle 274: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[209700.0, 182000.0], [209900.0, 182000.0], [209900.0, 189000.0], [209700.0, 189000.0]]}
+   Handle 275: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[210200.0, 182000.0], [210400.0, 182000.0], [210400.0, 189000.0], [210200.0, 189000.0]]}
+   Handle 276: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[210700.0, 182000.0], [210900.0, 182000.0], [210900.0, 189000.0], [210700.0, 189000.0]]}
+   Handle 277: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[211200.0, 182000.0], [211400.0, 182000.0], [211400.0, 189000.0], [211200.0, 189000.0]]}
+   Handle 278: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[211700.0, 182000.0], [211900.0, 182000.0], [211900.0, 189000.0], [211700.0, 189000.0]]}
+   Handle 279: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[212200.0, 182000.0], [212400.0, 182000.0], [212400.0, 189000.0], [212200.0, 189000.0]]}
+   Handle 27A: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 27B: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 27C: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 27D: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 27E: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 27F: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 280: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 281: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 282: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 283: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 284: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 285: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 286: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 287: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 288: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 289: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 28A: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 28B: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 28C: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 28D: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 28E: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 28F: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 290: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 291: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+
+3. Added entities (from change log) – presumed zebra bars:
+   Handle 264: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[127200.0, 182000.0], [127400.0, 182000.0], [127400.0, 189000.0], [127200.0, 189000.0]]}
+   Handle 265: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[127700.0, 182000.0], [127900.0, 182000.0], [127900.0, 189000.0], [127700.0, 189000.0]]}
+   Handle 266: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[128200.0, 182000.0], [128400.0, 182000.0], [128400.0, 189000.0], [128200.0, 189000.0]]}
+   Handle 267: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[128700.0, 182000.0], [128900.0, 182000.0], [128900.0, 189000.0], [128700.0, 189000.0]]}
+   Handle 268: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[129200.0, 182000.0], [129400.0, 182000.0], [129400.0, 189000.0], [129200.0, 189000.0]]}
+   Handle 269: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[129700.0, 182000.0], [129900.0, 182000.0], [129900.0, 189000.0], [129700.0, 189000.0]]}
+   Handle 26A: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[130200.0, 182000.0], [130400.0, 182000.0], [130400.0, 189000.0], [130200.0, 189000.0]]}
+   Handle 26B: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[130700.0, 182000.0], [130900.0, 182000.0], [130900.0, 189000.0], [130700.0, 189000.0]]}
+   Handle 26C: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[131200.0, 182000.0], [131400.0, 182000.0], [131400.0, 189000.0], [131200.0, 189000.0]]}
+   Handle 26D: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[131700.0, 182000.0], [131900.0, 182000.0], [131900.0, 189000.0], [131700.0, 189000.0]]}
+   Handle 26E: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[132200.0, 182000.0], [132400.0, 182000.0], [132400.0, 189000.0], [132200.0, 189000.0]]}
+   Handle 26F: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[207200.0, 182000.0], [207400.0, 182000.0], [207400.0, 189000.0], [207200.0, 189000.0]]}
+   Handle 270: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[207700.0, 182000.0], [207900.0, 182000.0], [207900.0, 189000.0], [207700.0, 189000.0]]}
+   Handle 271: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[208200.0, 182000.0], [208400.0, 182000.0], [208400.0, 189000.0], [208200.0, 189000.0]]}
+   Handle 272: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[208700.0, 182000.0], [208900.0, 182000.0], [208900.0, 189000.0], [208700.0, 189000.0]]}
+   Handle 273: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[209200.0, 182000.0], [209400.0, 182000.0], [209400.0, 189000.0], [209200.0, 189000.0]]}
+   Handle 274: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[209700.0, 182000.0], [209900.0, 182000.0], [209900.0, 189000.0], [209700.0, 189000.0]]}
+   Handle 275: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[210200.0, 182000.0], [210400.0, 182000.0], [210400.0, 189000.0], [210200.0, 189000.0]]}
+   Handle 276: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[210700.0, 182000.0], [210900.0, 182000.0], [210900.0, 189000.0], [210700.0, 189000.0]]}
+   Handle 277: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[211200.0, 182000.0], [211400.0, 182000.0], [211400.0, 189000.0], [211200.0, 189000.0]]}
+   Handle 278: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[211700.0, 182000.0], [211900.0, 182000.0], [211900.0, 189000.0], [211700.0, 189000.0]]}
+   Handle 279: type LWPOLYLINE, layer TRAFFIC_CALMING, data {"points": [[212200.0, 182000.0], [212400.0, 182000.0], [212400.0, 189000.0], [212200.0, 189000.0]]}
+   Count of added handles: 22
+
+4. Reason previous validation reported zero vertical zebra bars:
+   The validation script only examined entities listed in the change log and expected closed LWPOLYLINE on the TRAFFIC_CALMING layer. Any bars that are not LWPOLYLINE, are on a different layer, or were not captured in the change log will be ignored, yielding a count of zero.
+
+5. Handles 24C–263 that disappeared (present in V9, missing in V10):
+   Handle 24C: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 24D: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 24E: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 24F: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 250: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 251: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 252: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 253: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 254: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 255: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 256: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 257: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 258: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 259: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 25A: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 25B: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 25C: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 25D: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 25E: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 25F: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 260: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 261: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 262: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Handle 263: type SEQEND, layer DIMENSIONS, data {"info": "unsupported"}
+   Total removed: 24
+
+6. Crossing outlines (handles 143, 153) unchanged:
+   Handle 143: UNCHANGED
+   Handle 153: UNCHANGED
+
+7. Identified A3 sheet border entity:
+   Handle 4A, type LWPOLYLINE, layer TITLE_BLOCK, points [(np.float64(0.0), np.float64(0.0)), (np.float64(420000.0), np.float64(0.0)), (np.float64(420000.0), np.float64(297000.0)), (np.float64(0.0), np.float64(297000.0))]
+
+8. Text annotations outside printable border:
+   None – all within border
+
+9. Entity differences between V9 and V10:
+   Added handles (46): 264, 265, 266, 267, 268, 269, 26A, 26B, 26C, 26D, 26E, 26F, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 27A, 27B, 27C, 27D, 27E, 27F, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 28A, 28B, 28C, 28D, 28E, 28F, 290, 291
+   Removed handles (38): 144, 145, 146, 147, 148, 149, 14A, 154, 155, 156, 157, 158, 159, 15A, 24C, 24D, 24E, 24F, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 25A, 25B, 25C, 25D, 25E, 25F, 260, 261, 262, 263
+   Modified handles (0):
+
+10. SHA-256 hashes:
+   V9 (02_proposed_traffic_calming_road_v9.dxf): 6aedd54e96b99f879c2312b80a16be292fe23dad615cb6d1b85f7f3e672f2dac
+   V10 (02_proposed_traffic_calming_road_v10.dxf): e0da27c24aca1ef33fd30c7c8225abcd37a5a703ad660d2ffb2e5242bc0837b6
+   Drawing 01 (01_existing_urban_road_v4.dxf): 22e907c6f54f1fee6baaea66c57e475e08dc7fb9214ed9df353e411d197741d4
+
+--- SUMMARY ---
+Zebra markings present: PASS
+Original horizontal zebra lines removed: PASS
+Crossing outlines unchanged: PASS
+All text annotations inside printable sheet: PASS

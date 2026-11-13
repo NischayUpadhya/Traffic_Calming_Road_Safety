@@ -1,0 +1,46 @@
+CAD V10 Change Log
+===================
+Removed original zebra line handles:
+  - 144
+  - 145
+  - 146
+  - 147
+  - 148
+  - 149
+  - 14A
+  - 154
+  - 155
+  - 156
+  - 157
+  - 158
+  - 159
+  - 15A
+
+Added vertical zebra bar handles (LWPOLYLINE):
+  - 264
+  - 265
+  - 266
+  - 267
+  - 268
+  - 269
+  - 26A
+  - 26B
+  - 26C
+  - 26D
+  - 26E
+  - 26F
+  - 270
+  - 271
+  - 272
+  - 273
+  - 274
+  - 275
+  - 276
+  - 277
+  - 278
+  - 279
+
+Moved out-of-bounds text entities down by 105000 mm.
+Affected text handles: 1BC, 1BD, 240, 242
+
+Assumptions: bar_width=200mm, spacing=300mm, offset=200mm, layer=TRAFFIC_CALMING.

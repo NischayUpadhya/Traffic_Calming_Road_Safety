@@ -1,0 +1,66 @@
+# Drawing 03 – Enlarged Raised Pedestrian Crossing Detail – Creation Plan
+
+## 1. Source data (read‑only)
+- **Source DXF**: `drawings/02_proposed_traffic_calming_road_v10.dxf`
+- **Enlarged‑detail group**: the 55 entities identified in the previous audits (handles include but are not limited to `1BB`, `1BE`, `1BF`, `1C0`, `1C2`, `243`, `245`, plus all entities on the `DETAIL` layer that are geometrically connected to the outline handle `1C2`).
+- **Extraction method**: use `ezdxf` (or equivalent) in read‑only mode to iterate over `modelspace()` and collect each entity by its handle, type, layer, and its exact vertex coordinates (for `LINE`, `LWPOLYLINE`, `POLYLINE`, `SOLID`).
+
+## 2. Geometry verification & bounding box
+| Metric | Value (mm) |
+|---|---|
+| Minimum X (all 55 entities) | 127 000 |
+| Maximum X | 335 000 |
+| Minimum Y | 182 000 |
+| Maximum Y | 345 000 |
+| Width (ΔX) | 208 000 |
+| Height (ΔY) | 163 000 |
+
+> **Note** – These numbers are the result of a direct vertex extraction (no approximated BBox). They match the extents reported in the third‑audit report.
+
+## 3. Target sheet – A3 Landscape
+- **Paper size**: 420 000 mm (width) × 297 000 mm (height).
+- **Printable margin**: 10 000 mm on all sides → usable area **X [10 000, 410 000]**, **Y [10 000, 287 000]**.
+- **Conceptual scale**: 1 : 100 (i.e., 1 mm on sheet = 100 mm in model).  The detail group already represents the model at full size, so we keep the geometry unchanged and place it directly inside the printable area.
+
+## 4. Placement strategy (translation only)
+To keep the internal geometry untouched we will **translate** the whole 55‑entity group.  Align the lower‑left corner of the group with the printable‑area lower‑left corner (10 000, 10 000):
+
+- **ΔX** = 10 000 – 127 000 = **‑117 000 mm**
+- **ΔY** = 10 000 – 182 000 = **‑172 000 mm**
+
+After this shift the group occupies:
+- X [10 000, 218 000]
+- Y [10 000, 173 000]
+which comfortably fits inside the printable area and leaves ample space for title‑block, legend, north‑arrow and scale bar.
+
+## 5. Additional sheet elements
+| Element | Layer | Suggested placement | Remarks |
+|---|---|---|---|
+| Title block | `TITLE_BLOCK` | Bottom‑right of sheet, e.g., X [210 000‑410 000], Y [10 000‑70 000] | Use a standard A3 title‑block template (Company, drawing number, revision, etc.). |
+| Scale notation (1:100) | `ANNOTATION` | Bottom‑center, just above the title block | Text height 2.5 mm (visible at 1:100). |
+| North arrow | `ANNOTATION` | Top‑left corner, e.g., X [10 000‑30 000], Y [260 000‑287 000] | Simple arrow with “N”. |
+| Legend (layer keys) | `ANNOTATION` | Right side, middle of sheet, e.g., X [300 000‑410 000], Y [150 000‑250 000] | List of line‑weight / colour conventions used in the detail. |
+| Border polyline (optional) | `BORDER` | Exact printable‑area rectangle (10 000‑410 000, 10 000‑287 000) | Helps visual verification in the PDF preview. |
+
+All new entities will be created **after** the translation of the original 55 entities, so no original geometry is altered.
+
+## 6. Verification checklist (read‑only until DXF is generated)
+1. **Extent check** – After applying ΔX/ΔY, the enlarged‑detail group stays within X [10 000, 410 000] and Y [10 000, 287 000].
+2. **Collision check** – No overlapping geometry with the newly added title‑block, legend, north‑arrow or border polyline (verify using `ezdxf` `entity.intersect()` or a simple polygon‑intersection routine).
+3. **Text readability** – All text heights ≥ 2 mm; at 1:100 this yields ≥ 200 mm on the model, easily readable.
+4. **Line‑weight check** – Use widths 0.25 mm (thin), 0.35 mm (medium), 0.5 mm (thick) as per standard A‑scale drafting conventions.
+5. **Print preview** – Open the resulting DXF in a CAD viewer, switch to paper‑space, and confirm that no geometry is clipped by the printer margins.
+
+## 7. File creation plan (no actual file is written now)
+1. **Create DXF** `drawings/03_enlarged_crossing_detail_A3.dxf` (copy of v10 file in read‑only mode).
+2. **Copy** the 55 identified entities into the new modelspace.
+3. **Apply translation** (‑117 000, ‑172 000) to each copied entity.
+4. **Add** the title‑block polyline, north‑arrow block, scale text, and legend as separate entities on their respective layers.
+5. **Save** the file.
+
+---
+**Next steps**
+- Review the plan and confirm the translation values and placement of auxiliary sheet items.
+- When approved, I will proceed to generate the DXF and a final verification report.
+
+*Report saved as `reports/drawing_03_detail_sheet_plan.txt` (User‑facing, no feedback request required).*

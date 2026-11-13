@@ -1,0 +1,102 @@
+--- CAD V10 VERIFIED FINAL AUDIT (READ ONLY) ---
+
+1. A3 Border Verification
+   Border handle 4A: type LWPOLYLINE, layer TITLE_BLOCK
+   Extracted vertices: [(np.float64(0.0), np.float64(0.0)), (np.float64(420000.0), np.float64(0.0)), (np.float64(420000.0), np.float64(297000.0)), (np.float64(0.0), np.float64(297000.0))]
+   Expected vertices match: PASS
+
+2. Enlarged Detail Panel Verification
+   Detail handle 1C2: type LWPOLYLINE, layer TRAFFIC_CALMING
+   Extracted bbox (Xmin,Ymin,Xmax,Ymax): (np.float64(275000.0), np.float64(275000.0), np.float64(335000.0), np.float64(345000.0))
+   Expected X range: 275000–405000, Y range: 275000–345000
+   Coordinates match expectation: FAIL
+   Overflow beyond A3 border (mm):
+       Left: 0, Bottom: 0, Right: 0, Top: 48000.0
+   Does the detail extend beyond printable area? FAIL
+
+3. Entities within Detail Panel
+   Handle 4A: type LWPOLYLINE, layer TITLE_BLOCK, bbox (np.float64(0.0), np.float64(0.0), np.float64(420000.0), np.float64(297000.0))
+   Handle 4B: type LWPOLYLINE, layer TITLE_BLOCK, bbox (np.float64(10000.0), np.float64(10000.0), np.float64(410000.0), np.float64(287000.0))
+   Handle 1BB: type LWPOLYLINE, layer TEXT, bbox (np.float64(200000.0), np.float64(250000.0), np.float64(420000.0), np.float64(380000.0))
+   Handle 1BC: type TEXT, layer TEXT, bbox (308250.0, 278250.0, 311750.0, 281750.0)
+   Handle 1BD: type TEXT, layer TEXT, bbox (309000.0, 294000.0, 311000.0, 296000.0)
+   Handle 1BE: type LWPOLYLINE, layer FOOTPATH, bbox (np.float64(205000.0), np.float64(255000.0), np.float64(405000.0), np.float64(275000.0))
+   Handle 1BF: type LWPOLYLINE, layer FOOTPATH, bbox (np.float64(205000.0), np.float64(345000.0), np.float64(405000.0), np.float64(365000.0))
+   Handle 1C0: type LWPOLYLINE, layer ROAD, bbox (np.float64(205000.0), np.float64(275000.0), np.float64(405000.0), np.float64(345000.0))
+   Handle 1C1: type LINE, layer LANE_MARKINGS, bbox (305000.0, 275000.0, 305000.0, 345000.0)
+   Handle 1C2: type LWPOLYLINE, layer TRAFFIC_CALMING, bbox (np.float64(275000.0), np.float64(275000.0), np.float64(335000.0), np.float64(345000.0))
+   Handle 1C3: type LINE, layer TRAFFIC_CALMING, bbox (275000.0, 285000.0, 335000.0, 285000.0)
+   Handle 1C4: type LINE, layer TRAFFIC_CALMING, bbox (275000.0, 295000.0, 335000.0, 295000.0)
+   Handle 1C5: type LINE, layer TRAFFIC_CALMING, bbox (275000.0, 305000.0, 335000.0, 305000.0)
+   Handle 1C6: type LINE, layer TRAFFIC_CALMING, bbox (275000.0, 315000.0, 335000.0, 315000.0)
+   Handle 1C7: type LINE, layer TRAFFIC_CALMING, bbox (275000.0, 325000.0, 335000.0, 325000.0)
+   Handle 1C8: type LINE, layer TRAFFIC_CALMING, bbox (275000.0, 335000.0, 335000.0, 335000.0)
+   Handle 1C9: type LINE, layer TRAFFIC_CALMING, bbox (255000.0, 275000.0, 275000.0, 275000.0)
+   Handle 1CA: type LINE, layer TRAFFIC_CALMING, bbox (335000.0, 275000.0, 355000.0, 275000.0)
+   Handle 1D7: type LINE, layer LANE_MARKINGS, bbox (297500.0, 292500.0, 312500.0, 292500.0)
+   Handle 1D8: type LINE, layer LANE_MARKINGS, bbox (297500.0, 292500.0, 302500.0, 295500.0)
+   Handle 1D9: type LINE, layer LANE_MARKINGS, bbox (297500.0, 289500.0, 302500.0, 292500.0)
+   Handle 1DA: type LINE, layer LANE_MARKINGS, bbox (297500.0, 327500.0, 312500.0, 327500.0)
+   Handle 1DB: type LINE, layer LANE_MARKINGS, bbox (307500.0, 327500.0, 312500.0, 330500.0)
+   Handle 1DC: type LINE, layer LANE_MARKINGS, bbox (307500.0, 324500.0, 312500.0, 327500.0)
+   Handle 243: type LINE, layer TEXT, bbox (305000.0, 343000.0, 417000.0, 357000.0)
+   Handle 245: type LINE, layer TEXT, bbox (335000.0, 267000.0, 417000.0, 308000.0)
+   Total panel entities: 26
+   Text entities: 2, Dimension entities: 0, Arrow inserts: 0
+   Clipping check (entities outside A3 border):
+       FAIL – 14 entities exceed printable area
+           Handle 1BB: bbox (np.float64(200000.0), np.float64(250000.0), np.float64(420000.0), np.float64(380000.0))
+           Handle 1BF: bbox (np.float64(205000.0), np.float64(345000.0), np.float64(405000.0), np.float64(365000.0))
+           Handle 1C0: bbox (np.float64(205000.0), np.float64(275000.0), np.float64(405000.0), np.float64(345000.0))
+           Handle 1C1: bbox (305000.0, 275000.0, 305000.0, 345000.0)
+           Handle 1C2: bbox (np.float64(275000.0), np.float64(275000.0), np.float64(335000.0), np.float64(345000.0))
+           Handle 1C5: bbox (275000.0, 305000.0, 335000.0, 305000.0)
+           Handle 1C6: bbox (275000.0, 315000.0, 335000.0, 315000.0)
+           Handle 1C7: bbox (275000.0, 325000.0, 335000.0, 325000.0)
+           Handle 1C8: bbox (275000.0, 335000.0, 335000.0, 335000.0)
+           Handle 1DA: bbox (297500.0, 327500.0, 312500.0, 327500.0)
+           Handle 1DB: bbox (307500.0, 327500.0, 312500.0, 330500.0)
+           Handle 1DC: bbox (307500.0, 324500.0, 312500.0, 327500.0)
+           Handle 243: bbox (305000.0, 343000.0, 417000.0, 357000.0)
+           Handle 245: bbox (335000.0, 267000.0, 417000.0, 308000.0)
+
+4. Layout and Plot Configuration
+   Layout 'Model': paper 420.0 x 297.0 mm, rotation 0
+       No VPORT entities
+   Layout 'Layout1': paper 420.0 x 297.0 mm, rotation 0
+       No VPORT entities
+
+5. Dimension Entities
+   V9 dimensions count: 12
+   V10 dimensions count: 12
+
+6. Entity Comparison Summary
+   Added handles (46): 264, 265, 266, 267, 268, 269, 26A, 26B, 26C, 26D, 26E, 26F, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 27A, 27B, 27C, 27D, 27E, 27F, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 28A, 28B, 28C, 28D, 28E, 28F, 290, 291
+   Removed handles (38): 144, 145, 146, 147, 148, 149, 14A, 154, 155, 156, 157, 158, 159, 15A, 24C, 24D, 24E, 24F, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 25A, 25B, 25C, 25D, 25E, 25F, 260, 261, 262, 263
+   Modified handles (4): 240, 1BD, 1BC, 242
+   Intended zebra rectangles added (handles): 264, 265, 266, 267, 268, 269, 26A, 26B, 26C, 26D, 26E, 26F, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279
+   Horizontal zebra lines removed (expected 14): 14 handles
+   Handles: 144, 145, 146, 147, 148, 149, 14A, 154, 155, 156, 157, 158, 159, 15A
+   SEQEND records removed (expected 24): 24 handles
+   Handles: 24C, 24D, 24E, 24F, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 25A, 25B, 25C, 25D, 25E, 25F, 260, 261, 262, 263
+
+7. File Integrity (SHA‑256)
+   V9 (02_proposed_traffic_calming_road_v9.dxf): 6aedd54e96b99f879c2312b80a16be292fe23dad615cb6d1b85f7f3e672f2dac
+   V10 (02_proposed_traffic_calming_road_v10.dxf): e0da27c24aca1ef33fd30c7c8225abcd37a5a703ad660d2ffb2e5242bc0837b6
+   Existing (01_existing_urban_road_v4.dxf): 22e907c6f54f1fee6baaea66c57e475e08dc7fb9214ed9df353e411d197741d4
+   Note: No historic baseline hashes available for direct comparison.
+
+--- SUMMARY ---
+A3 border geometry correct: PASS
+Detail panel coordinates correct: FAIL
+Detail panel overflow: FAIL
+All panel entities within printable area: FAIL
+Dimension entities unchanged: PASS
+Intended zebra rectangles present: PASS
+Horizontal zebra lines removed: PASS
+SEQEND records removed: PASS
+
+Recommended minimal corrections:
+   • Adjust detail panel entities to fit within A3 border or modify border/plot settings accordingly.
+   • Review clipped entities and move them inside printable area.
+   • Verify that all intended zebra rectangles are on correct layer and closed.

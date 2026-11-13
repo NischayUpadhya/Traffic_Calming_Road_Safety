@@ -1,0 +1,70 @@
+CAD Validation Report – BCV755A Road Safety Engineering
+Generated on: 2026-11-14T00:33:53.788322
+
+1. Road geometry validation (Drawing 01)
+   road_length: FAIL – found 258000 mm
+   road_total_width: FAIL – found 60800 mm
+   footpaths: FAIL – found 0 footpath rectangles, widths: []
+   carriageway: FAIL – found 0 carriageway sections, widths: []
+   lane_centerline: FAIL – found centreline lengths: [0.0]
+
+2. Raised crossing locations (Drawing 02 v9)
+   crossing_60000: FAIL – found 0 tables at X≈130000
+   crossing_140000: FAIL – found 0 tables at X≈210000
+
+3. Detail panel entity presence (Drawing 02 v9)
+   approach_ramps: FAIL – found 0 ramp lines
+   raised_table: FAIL – found 0 TRAFFIC_CALMING polylines
+   zebra_stripes: FAIL – found 0 zebra stripe lines
+   signs: FAIL – found 0 sign squares
+   reflective_studs: FAIL – found 0 studs
+   detail_arrows: FAIL – found 0 arrow lines
+
+4. Footpath continuity (Drawing 01)
+   footpaths: FAIL
+
+5. Layer existence (Drawing 01 & Drawing 02 v9)
+   Drawing 01:
+      missing_layers: FAIL – missing: ['TRAFFIC_CALMING', 'SIGNS']
+      extra_layers: FAIL – extra: ['Defpoints', '0']
+   Drawing 02 v9:
+      missing_layers: PASS – missing: []
+      extra_layers: FAIL – extra: ['Defpoints', '0']
+
+6. Sheet boundary adherence (both drawings)
+   Drawing 01: PASS – 0 entities out of sheet bounds
+   Drawing 02 v9: FAIL – 4 entities out of sheet bounds
+
+7. Text overlap (approximate axis‑aligned bounding boxes)
+   Drawing 01: PASS – 0 overlapping text pairs (axis‑aligned bbox only)
+   Drawing 02 v9: PASS – 0 overlapping text pairs (axis‑aligned bbox only)
+   Limitation: rotation and multiline text are not accounted for.
+
+8. Main‑plan geometry comparison (Drawing 02 v9 vs v8)
+   only_in_v9: 5 differing entities (manual inspection recommended)
+   only_in_v8: 5 differing entities (manual inspection recommended)
+
+9. DXF units and scale notes
+   Drawing 01 units code: 4 (expected 4 = mm)
+   Drawing 02 v9 units code: 4 (expected 4 = mm)
+   Note: Main‑plan geometry is model‑space 1:1 mm. The enlarged detail panel uses a factor‑10 scaling to represent a 1:100 conceptual scale; dimensions are displayed as real values.
+
+10. Summary of detected issues
+   1. road_length: found 258000 mm
+   2. road_total_width: found 60800 mm
+   3. footpaths: found 0 footpath rectangles, widths: []
+   4. carriageway: found 0 carriageway sections, widths: []
+   5. lane_centerline: found centreline lengths: [0.0]
+   6. crossing_60000: found 0 tables at X≈130000
+   7. crossing_140000: found 0 tables at X≈210000
+   8. approach_ramps: found 0 ramp lines
+   9. raised_table: found 0 TRAFFIC_CALMING polylines
+   10. zebra_stripes: found 0 zebra stripe lines
+   11. signs: found 0 sign squares
+   12. reflective_studs: found 0 studs
+   13. detail_arrows: found 0 arrow lines
+   14. missing_layers: missing: ['TRAFFIC_CALMING', 'SIGNS']
+   15. extra_layers: extra: ['Defpoints', '0']
+   16. extra_layers: extra: ['Defpoints', '0']
+   17. sheet_boundary_02: 4 entities out of sheet bounds
+   18. Main‑plan differences between v9 and v8 detected.

@@ -1,0 +1,48 @@
+--- CAD V10 READ‑ONLY VALIDATION REPORT ---
+
+1. Zebra bars in V10 (vertical):
+   Number of bars: 0
+
+2. Original horizontal zebra lines removed in V10:
+   Handle 144: removed
+   Handle 145: removed
+   Handle 146: removed
+   Handle 147: removed
+   Handle 148: removed
+   Handle 149: removed
+   Handle 14A: removed
+   Handle 154: removed
+   Handle 155: removed
+   Handle 156: removed
+   Handle 157: removed
+   Handle 158: removed
+   Handle 159: removed
+   Handle 15A: removed
+
+3. Crossing outlines unchanged between V9 and V10:
+   Outline handle 143: unchanged
+   Outline handle 153: unchanged
+
+4. Layer entity count changes (excluding zebra corrections):
+   Layer TRAFFIC_CALMING: V9=30, V10=38
+
+5. Sheet border identified:
+   Handle None, bbox (0, 0, 420000, 297000), layer UNKNOWN
+
+6. Annotations outside sheet border (should be inside):
+   None – all within border.
+
+7. Entity additions and deletions between V9 and V10:
+   Added handles (46): 264, 265, 266, 267, 268, 269, 26A, 26B, 26C, 26D, 26E, 26F, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 27A, 27B, 27C, 27D, 27E, 27F, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 28A, 28B, 28C, 28D, 28E, 28F, 290, 291
+   Removed handles (38): 144, 145, 146, 147, 148, 149, 14A, 154, 155, 156, 157, 158, 159, 15A, 24C, 24D, 24E, 24F, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 25A, 25B, 25C, 25D, 25E, 25F, 260, 261, 262, 263
+
+8. File size verification:
+   V9 size: 108658 bytes
+   V10 size: 111240 bytes
+   Drawing 01 (v4) size: 80152 bytes (unchanged)
+
+--- SUMMARY ---
+Zebra bars orientation and length: FAIL
+Original horizontal zebra lines removed: PASS
+Crossing outlines unchanged: PASS
+Annotations inside sheet border: PASS

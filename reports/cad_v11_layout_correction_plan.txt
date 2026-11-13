@@ -1,0 +1,44 @@
+--- CAD V11 Layout Correction Plan (READ ONLY) ---
+
+1. Enlarged crossing detail identification
+   Detail outline handle 1C2 bbox: X [275000 - 335000], Y [275000 - 345000]
+   Number of entities intersecting this bbox: 20
+
+2. Entities belonging to the detail group
+   Handle | Type | Layer | Bounding Box (xmin, ymin, xmax, ymax)
+      1BC | TEXT         | TEXT         | (310000, 280000, 310000, 280000)
+      1BD | TEXT         | TEXT         | (310000, 295000, 310000, 295000)
+      1C1 | LINE         | LANE_MARKINGS | (305000, 275000, 305000, 345000)
+      1C2 | LWPOLYLINE   | TRAFFIC_CALMING | (275000, 275000, 335000, 345000)
+      1C3 | LINE         | TRAFFIC_CALMING | (275000, 285000, 335000, 285000)
+      1C4 | LINE         | TRAFFIC_CALMING | (275000, 295000, 335000, 295000)
+      1C5 | LINE         | TRAFFIC_CALMING | (275000, 305000, 335000, 305000)
+      1C6 | LINE         | TRAFFIC_CALMING | (275000, 315000, 335000, 315000)
+      1C7 | LINE         | TRAFFIC_CALMING | (275000, 325000, 335000, 325000)
+      1C8 | LINE         | TRAFFIC_CALMING | (275000, 335000, 335000, 335000)
+      1C9 | LINE         | TRAFFIC_CALMING | (255000, 275000, 275000, 275000)
+      1CA | LINE         | TRAFFIC_CALMING | (335000, 275000, 355000, 275000)
+      1D7 | LINE         | LANE_MARKINGS | (297500, 292500, 312500, 292500)
+      1D8 | LINE         | LANE_MARKINGS | (297500, 292500, 302500, 295500)
+      1D9 | LINE         | LANE_MARKINGS | (297500, 289500, 302500, 292500)
+      1DA | LINE         | LANE_MARKINGS | (297500, 327500, 312500, 327500)
+      1DB | LINE         | LANE_MARKINGS | (307500, 327500, 312500, 330500)
+      1DC | LINE         | LANE_MARKINGS | (307500, 324500, 312500, 327500)
+      243 | LINE         | TEXT         | (305000, 343000, 417000, 357000)
+      245 | LINE         | TEXT         | (335000, 267000, 417000, 308000)
+
+3. Overall detail group extents
+   Minimum X: 255000 mm
+   Minimum Y: 267000 mm
+   Maximum X: 417000 mm
+   Maximum Y: 357000 mm
+
+4. Translation needed to fit within A3 border (margin 10,000 mm)
+   Target interior area: X [10000 - 410000], Y [10000 - 287000]
+   Required shift: ΔX = -7000 mm, ΔY = -70000 mm
+   (Positive values move right/up, negative move left/down)
+
+5. Impact on unrelated elements
+   Verification that main road plan, title block, legend, dimensions etc. are outside the detail bbox: PASS
+
+--- END OF PLAN ---

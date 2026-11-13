@@ -1,0 +1,42 @@
+--- CAD Zebra Orientation Review (read‑only) ---
+
+1. Crossing outlines
+Handle 143: LWPOLYLINE on TRAFFIC_CALMING, vertices [(127000,182000), (133000,182000), (133000,189000), (127000,189000)], bbox None
+Handle 153: LWPOLYLINE on TRAFFIC_CALMING, vertices [(207000,182000), (213000,182000), (213000,189000), (207000,189000)], bbox None
+
+2. Zebra marking lines (group A then B)
+Handle 144: LINE on TRAFFIC_CALMING, start (127000,182875) end (133000,182875), bbox None
+Handle 145: LINE on TRAFFIC_CALMING, start (127000,183750) end (133000,183750), bbox None
+Handle 146: LINE on TRAFFIC_CALMING, start (127000,184625) end (133000,184625), bbox None
+Handle 147: LINE on TRAFFIC_CALMING, start (127000,185500) end (133000,185500), bbox None
+Handle 148: LINE on TRAFFIC_CALMING, start (127000,186375) end (133000,186375), bbox None
+Handle 149: LINE on TRAFFIC_CALMING, start (127000,187250) end (133000,187250), bbox None
+Handle 14A: LINE on TRAFFIC_CALMING, start (127000,188125) end (133000,188125), bbox None
+Handle 154: LINE on TRAFFIC_CALMING, start (207000,182875) end (213000,182875), bbox None
+Handle 155: LINE on TRAFFIC_CALMING, start (207000,183750) end (213000,183750), bbox None
+Handle 156: LINE on TRAFFIC_CALMING, start (207000,184625) end (213000,184625), bbox None
+Handle 157: LINE on TRAFFIC_CALMING, start (207000,185500) end (213000,185500), bbox None
+Handle 158: LINE on TRAFFIC_CALMING, start (207000,186375) end (213000,186375), bbox None
+Handle 159: LINE on TRAFFIC_CALMING, start (207000,187250) end (213000,187250), bbox None
+Handle 15A: LINE on TRAFFIC_CALMING, start (207000,188125) end (213000,188125), bbox None
+
+3. Sheet border (A3 landscape)
+Sheet bounding box: (0, 0, 420000, 297000)
+
+4. Text entities and out‑of‑bounds check
+Handle 1BC: bbox (308250.0, 383250.0, 311750.0, 386750.0), out_of_bounds = True
+Handle 1BD: bbox (309000.0, 399000.0, 311000.0, 401000.0), out_of_bounds = True
+Handle 240: bbox (191250.0, 355250.0, 194750.0, 358750.0), out_of_bounds = True
+Handle 242: bbox (415250.0, 355250.0, 418750.0, 358750.0), out_of_bounds = True
+
+5. Proposed correct zebra‑bar arrangement
+   - Road runs along X (increasing X direction).
+   - Carriageway occupies Y from approx 182000 to 189000 (width 7000 mm).
+   - Existing zebra lines run horizontally (constant Y), which is parallel to the road.
+   - Correct zebra bars should be vertical, i.e., lines with constant X and varying Y
+   - Each bar should span the full carriageway Y range (≈182000‑189000)
+   - Bars should be spaced regularly along X within the crossing area (e.g., every 200‑300 mm)
+   - For crossing at X≈127000‑133000, typical bars could be at X = 128000, 128300, 128600, … up to 132700
+   - Similarly for crossing at X≈207000‑213000, bars at X = 208000, 208300, … up to 212700
+
+NOTE: No DXF modifications have been made. This is a read‑only analysis.

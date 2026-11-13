@@ -1,0 +1,63 @@
+=== Task 1 – Crossing outlines (handles 143, 153) ===
+Handle 143: LWPOLYLINE on TRAFFIC_CALMING, bbox None
+PASS
+Handle 153: LWPOLYLINE on TRAFFIC_CALMING, bbox None
+PASS
+
+=== Task 2 – Zebra group A ===
+Handle 144: LINE on TRAFFIC_CALMING, bbox None
+Handle 145: LINE on TRAFFIC_CALMING, bbox None
+Handle 146: LINE on TRAFFIC_CALMING, bbox None
+Handle 147: LINE on TRAFFIC_CALMING, bbox None
+Handle 148: LINE on TRAFFIC_CALMING, bbox None
+Handle 149: LINE on TRAFFIC_CALMING, bbox None
+Handle 14A: LINE on TRAFFIC_CALMING, bbox None
+
+=== Task 2 – Zebra group B ===
+Handle 154: LINE on TRAFFIC_CALMING, bbox None
+Handle 155: LINE on TRAFFIC_CALMING, bbox None
+Handle 156: LINE on TRAFFIC_CALMING, bbox None
+Handle 157: LINE on TRAFFIC_CALMING, bbox None
+Handle 158: LINE on TRAFFIC_CALMING, bbox None
+Handle 159: LINE on TRAFFIC_CALMING, bbox None
+Handle 15A: LINE on TRAFFIC_CALMING, bbox None
+
+Zebra bar full‑width: NOT VERIFIED (no ROAD extents)
+
+=== Task 4 – Text entities (1BC,1BD,240,242) ===
+Handle 1BC: TEXT on TEXT, bbox (308250.0, 383250.0, 311750.0, 386750.0) – out_of_bounds=True
+Handle 1BD: TEXT on TEXT, bbox (309000.0, 399000.0, 311000.0, 401000.0) – out_of_bounds=True
+Handle 240: TEXT on TEXT, bbox (191250.0, 355250.0, 194750.0, 358750.0) – out_of_bounds=True
+Handle 242: TEXT on TEXT, bbox (415250.0, 355250.0, 418750.0, 358750.0) – out_of_bounds=True
+
+=== Task 5 – Detail‑panel labels (X>200k) ===
+Label 13E at (270500.0, 184900.0, 272500.0, 186900.0) – out_of_bounds=False
+Label 15E at (204000.0, 184500.0, 206000.0, 186500.0) – out_of_bounds=False
+Label 161 at (208250.0, 172250.0, 211750.0, 175750.0) – out_of_bounds=False
+Label 168 at (368000.0, 234500.0, 372000.0, 238500.0) – out_of_bounds=False
+Label 169 at (369000.0, 217000.0, 371000.0, 219000.0) – out_of_bounds=False
+Label 18D at (208000.0, 66075.0, 212000.0, 70075.0) – out_of_bounds=False
+Label 18E at (208000.0, 60475.0, 212000.0, 64475.0) – out_of_bounds=False
+Label 18F at (208750.0, 51375.0, 211250.0, 53875.0) – out_of_bounds=False
+Label 1AC at (277266.0, 46100.0, 279066.0, 47900.0) – out_of_bounds=False
+Label 1AD at (312266.0, 46100.0, 314066.0, 47900.0) – out_of_bounds=False
+Label 1AE at (277266.0, 42320.0, 279066.0, 44120.0) – out_of_bounds=False
+Label 1AF at (312266.0, 42320.0, 314066.0, 44120.0) – out_of_bounds=False
+Label 1B0 at (277266.0, 38540.0, 279066.0, 40340.0) – out_of_bounds=False
+Label 1B1 at (312266.0, 38540.0, 314066.0, 40340.0) – out_of_bounds=False
+Label 1B2 at (277266.0, 34760.0, 279066.0, 36560.0) – out_of_bounds=False
+Label 1B3 at (312266.0, 34760.0, 314066.0, 36560.0) – out_of_bounds=False
+Label 1B4 at (277266.0, 30980.0, 279066.0, 32780.0) – out_of_bounds=False
+Label 1B5 at (312266.0, 30980.0, 314066.0, 32780.0) – out_of_bounds=False
+Label 1B6 at (277266.0, 27200.0, 279066.0, 29000.0) – out_of_bounds=False
+Label 1B7 at (312266.0, 27200.0, 314066.0, 29000.0) – out_of_bounds=False
+Label 1B8 at (277266.0, 23420.0, 279066.0, 25220.0) – out_of_bounds=False
+Label 1B9 at (312266.0, 23420.0, 314066.0, 25220.0) – out_of_bounds=False
+Label 1BA at (209100.0, 14100.0, 210900.0, 15900.0) – out_of_bounds=False
+Label 1BC at (308250.0, 383250.0, 311750.0, 386750.0) – out_of_bounds=True
+Label 1BD at (309000.0, 399000.0, 311000.0, 401000.0) – out_of_bounds=True
+Label 242 at (415250.0, 355250.0, 418750.0, 358750.0) – out_of_bounds=True
+Label 244 at (415250.0, 265250.0, 418750.0, 268750.0) – out_of_bounds=False
+Label 248 at (309100.0, 239100.0, 310900.0, 240900.0) – out_of_bounds=False
+
+Matplotlib not available – preview not generated
